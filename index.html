@@ -70,11 +70,20 @@
         #wrap header .dropdown-menu {
             z-index: 10000;
         }
+
+        #wrap footer a {
+            font-size: 1.8rem;
+            color: var(#f8f9fa)
+        }
+
+        #wrap footer a:hover {
+            color: var(--bs-link-hover-color #0a58ca)
+        }
     </style>
     <title>MyBootstrap</title>
 </head>
 
-<body data-bs-theme="dark">
+<body data-bs-theme="light" class="d-flex flex-column min-vh-100">
 
     <div id="wrap">
         <header class="bg-black-blueoil">
@@ -161,10 +170,10 @@
             </div>
         </nav>
 
-        <main>
+         <main class="flex-grow-1">
             <div class="container">
-                <div class="row" style="background-color: #ffc107;">
-                    <section class="col-md-8 col-lg-9 bg-dark pt-3">
+                <div class="row h-100" style="background-color: #ffc107;">
+                    <section class="col-md-8 col-lg-9 bg-light pt-3">
                         <h2>Título</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati reprehenderit ipsa
                             placeat, vitae soluta accusantium dolores rem possimus ut aliquam consectetur ab nobis,
@@ -176,7 +185,7 @@
                             fugiat aperiam quos? Recusandae, ut quo.</p>
                     </section>
 
-                    <aside class="col-md-4 col-lg-3 bg-dark pt-3">
+                    <aside class="col-md-4 col-lg-3 bg-light-subtle pt-3">
                         <h3>Veja também</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus sint rem
                             sed.
@@ -186,8 +195,12 @@
             </div>
         </main>
 
-        <footer>
-            FOOTER
+        <footer class="bg-dark text-light">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="index.html"><i class="bi bi-house-fill"></i></a>
+                <div>&copy; 2026 fabricionog</div>
+                <a href="#top"><i class="bi bi-arrow-up-circle-fill"></i></a>
+            </div>
         </footer>
 
     </div>
