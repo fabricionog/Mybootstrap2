@@ -31,7 +31,7 @@
 
 .logged .dropdown-toggle {
     color: var(--text-warning);
-    text-decoration: none;
+    text-decoration: #114;
 }
 
 .text-black-blueoil {
@@ -66,9 +66,24 @@
 
 #wrap footer a {
     font-size: 1.8rem;
-    color: var(#f8f9fa)
+    color: var(#114)
 }
 
 #wrap footer a:hover {
     color: var(--bs-link-hover-color #0a58ca)
+}
+
+main>.container>.row>section,
+main>.container>.row>aside {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm {
+    max-width: 550px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
 }
