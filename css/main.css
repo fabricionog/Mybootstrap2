@@ -1,0 +1,74 @@
+/* folhas de estilho do template*/
+
+
+
+/* Cores personalizadas */
+:root {
+    --text-warning: #ffc107;
+    --bg-black-blueoil: #114;
+}
+
+#wrap header .logotipo {
+    height: 120px;
+}
+
+#wrap header small {
+    font-size: 73%;
+}
+
+.logged img,
+.unlogged img {
+    height: 2rem;
+    width: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    .logged img {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+.logged .dropdown-toggle {
+    color: var(--text-warning);
+    text-decoration: none;
+}
+
+.text-black-blueoil {
+    color: var(--text-warning);
+}
+
+.bg-black-blueoil {
+    background-color: var(--bg-black-blueoil);
+}
+
+.navbar-brand img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.navbar-brand {
+    opacity: 0;
+    /* visibility: hidden; */
+    display: none;
+    transition: opacity .3s ease;
+}
+
+.navbar-brand.show {
+    opacity: 1;
+    /* visibility: visible; */
+    display: block;
+}
+
+#wrap header .dropdown-menu {
+    z-index: 10000;
+}
+
+#wrap footer a {
+    font-size: 1.8rem;
+    color: var(#f8f9fa)
+}
+
+#wrap footer a:hover {
+    color: var(--bs-link-hover-color #0a58ca)
+}
